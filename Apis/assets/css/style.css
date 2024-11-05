@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #519cda;
+}
+
+main,
+.grafico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+.grafico {
+  width: 45%;
+  margin: auto;
+  padding-bottom: 10%;
+}
+.titulo {
+  color: white;
+}
+
+.contenedor {
+  color: white;
+  background-color: #0a0a0a;
+  padding: 4%;
+  border-radius: 0.5rem;
+}
+
+.boton,
+.moneda,
+.clp {
+  margin-top: 5%;
+}
+
+.btn:hover {
+  background-color: #32ec42;
+  transition: 500ms;
+}
+
+@media (max-width: 1200px) {
+  /* Dispositivos de escritorio grandes */
+  .grafico {
+    width: 60%; /* Aumenta el ancho para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 992px) {
+  /* Tablet */
+  .grafico {
+    width: 80%; /* Cambia el ancho a 80% en tabletas */
+  }
+  .contenedor {
+    padding: 3%; /* Reduce el padding para tabletas */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Móviles grandes */
+  body {
+    background-color: #2a6f93; /* Cambia el color de fondo para móviles */
+  }
+  main,
+  .grafico {
+    margin: 2%; /* Reduce el margen en móviles */
+  }
+  .grafico {
+    width: 90%; /* Aumenta el ancho para pantallas móviles */
+  }
+  .contenedor {
+    padding: 2%; /* Reduce aún más el padding */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Móviles pequeños */
+  .titulo {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente para móviles pequeños */
+  }
+  .boton,
+  .moneda,
+  .clp {
+    font-size: 0.9rem; /* Reduce el tamaño de fuente de botones y otros elementos */
+  }
+}
